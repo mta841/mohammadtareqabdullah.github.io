@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Tareq Abdullah | Senior B2B International Sales Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+                    colors: {
+                        brand: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 600: '#059669', 700: '#047857', 900: '#064e3b' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(229, 231, 235, 0.8); }
+        .dark .glass-card { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(51, 65, 85, 0.8); }
+        .gradient-text { background: linear-gradient(135deg, #059669 0%, #0d9488 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .dark .gradient-text { background: linear-gradient(135deg, #34d399 0%, #2dd4bf 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-teal-500 text-white font-extrabold flex items-center justify-center text-lg shadow-md shadow-brand-500/20">
+                    TA
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-slate-900 dark:text-white text-base leading-none">M. Tareq Abdullah</h1>
+                    <span class="text-xs font-semibold text-brand-600 dark:text-brand-400" data-en="Senior B2B Sales Specialist & Territory Manager" data-cn="高级跨国B2B销售专家与大区经理">Senior B2B Sales Specialist & Territory Manager</span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600 dark:text-slate-300">
+                <a href="#about" class="hover:text-brand-600 dark:hover:text-brand-400 transition" data-en="About" data-cn="关于我">About</a>
+                <a href="#performance" class="hover:text-brand-600 dark:hover:text-brand-400 transition" data-en="Performance Track" data-cn="销售业绩">Performance Track</a>
+                <a href="#experience" class="hover:text-brand-600 dark:hover:text-brand-400 transition" data-en="Experience" data-cn="工作履历">Experience</a>
+                <a href="#education" class="hover:text-brand-600 dark:hover:text-brand-400 transition" data-en="Education & Certs" data-cn="教育与认证">Education & Certs</a>
+                <a href="#contact" class="hover:text-brand-600 dark:hover:text-brand-400 transition" data-en="Contact" data-cn="联系方式">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <button onclick="toggleLang()" class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-slate-700 text-xs font-bold bg-white dark:bg-slate-900 shadow-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center space-x-1.5">
+                    <i class="fa-solid fa-language text-brand-600 dark:text-brand-400 text-sm"></i>
+                    <span id="langText">中文</span>
+                </button>
+                <button onclick="toggleDarkMode()" class="p-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 shadow-sm">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:inline text-amber-400"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="about" class="py-16 md:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- PROFILE IMAGE & BIO INFO -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="flex items-center space-x-6">
+                    <!-- Headshot Image Placeholder -->
+                    <div class="relative w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden shadow-lg border-2 border-brand-500/30 flex-shrink-0 bg-slate-200 dark:bg-slate-800">
+                        <img src="your-photo.jpg" alt="Mohammad Tareq Abdullah" class="w-full h-full object-cover" onError="this.onerror=null; this.src='https://via.placeholder.com/150?text=Tareq+Abdullah';">
+                    </div>
+
+                    <div class="space-y-2">
+                        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full text-xs font-bold bg-brand-50 dark:bg-brand-950/60 text-brand-700 dark:text-brand-300 border border-brand-200 dark:border-brand-800">
+                            <span class="w-2 h-2 rounded-full bg-brand-500 animate-ping"></span>
+                            <span data-en="Shenzhen Tech Hub Based • Open to Global Relocation" data-cn="常驻深圳科技中心 • 支持全球调派常驻">Shenzhen Tech Hub Based • Open to Global Relocation</span>
+                        </div>
+                        
+                        <h1 class="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white tracking-tight leading-none">
+                            Mohammad Tareq <br>
+                            <span class="gradient-text">Abdullah</span>
+                        </h1>
+                    </div>
+                </div>
+
+                <p class="text-lg font-bold text-slate-700 dark:text-slate-300" data-en="Senior B2B Technical Sales Manager | Preclinical Instruments & Hardware" data-cn="高级B2B技术销售经理 | 专精科研仪器与高精硬件">
+                    Senior B2B Technical Sales Manager | Preclinical Instruments & Hardware
+                </p>
+                
+                <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed" data-en="Adaptable B2B international sales specialist with 8+ years of cross-industry expertise spanning life science instrumentation, optical communications, and credit risk assessment. Scaled zero-base US territories to over 15.3M RMB in total sales, building and managing an active portfolio of 720+ accounts and 730+ opportunities." data-cn="拥有8年以上跨国B2B销售经验的技术型资深大区经理。在生命科学仪器领域实现从零开拓，累计创造超1530万人民币销售业绩，成功管理并服务720+家北美与全球客户机构及730+个商机。">
+                    Adaptable B2B international sales specialist with 8+ years of cross-industry expertise spanning life science instrumentation, optical communications, and credit risk assessment. Scaled zero-base US territories to over 15.3M RMB in total sales, building and managing an active portfolio of 720+ accounts and 730+ opportunities.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="mailto:tareq.abdullah01@gmail.com" class="px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs sm:text-sm shadow-lg shadow-brand-600/30 transition flex items-center">
+                        <i class="fa-solid fa-envelope mr-2"></i> Direct Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohammadtareqabdullah/" target="_blank" class="px-5 py-3 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs sm:text-sm shadow-md transition flex items-center">
+                        <i class="fa-brands fa-linkedin mr-2"></i> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+
+            <!-- HIGHLIGHT METRICS -->
+            <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                <div class="glass-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+                    <span class="block text-3xl font-black text-brand-600 dark:text-brand-400">15.3M+</span>
+                    <span class="text-xs font-semibold text-slate-500 dark:text-slate-400" data-en="Total Revenue (RMB)" data-cn="累计销售额 (人民币)">Total Revenue (RMB)</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+                    <span class="block text-3xl font-black text-slate-900 dark:text-white">723</span>
+                    <span class="text-xs font-semibold text-slate-500 dark:text-slate-400" data-en="Active Owned Accounts" data-cn="名下独立客户账号">Active Owned Accounts</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+                    <span class="block text-3xl font-black text-slate-900 dark:text-white">15x</span>
+                    <span class="text-xs font-semibold text-slate-500 dark:text-slate-400" data-en="Revenue Multiplier (2021-25)" data-cn="年度业绩增长倍数">Revenue Multiplier (2021-25)</span>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+                    <span class="block text-3xl font-black text-brand-600 dark:text-brand-400">Master's</span>
+                    <span class="text-xs font-semibold text-slate-500 dark:text-slate-400" data-en="Economics (Xiamen Univ.)" data-cn="经济学硕士 (厦门大学)">Economics (Xiamen Univ.)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED PERFORMANCE BREAKDOWN -->
+    <section id="performance" class="py-16 bg-slate-100 dark:bg-slate-900/60 border-y border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white mb-2 flex items-center space-x-3">
+                <span class="w-3 h-8 bg-brand-600 rounded-full"></span>
+                <span data-en="Proven Revenue Trajectory (RWD Life Science)" data-cn="业绩增长轨迹 (瑞沃德生命科学)">Proven Revenue Trajectory (RWD Life Science)</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-8 pl-6" data-en="Consistently exceeding annual sales targets across North American territories." data-cn="北美市场销售业绩逐年递增并持续突破年销售目标。">Consistently exceeding annual sales targets across North American territories.</p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Sales Data Table -->
+                <div class="lg:col-span-2 glass-card p-6 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-x-auto">
+                    <table class="w-full text-left text-xs sm:text-sm">
+                        <thead class="text-slate-400 uppercase border-b border-slate-200 dark:border-slate-800">
+                            <tr>
+                                <th class="pb-3" data-en="Year" data-cn="年份">Year</th>
+                                <th class="pb-3" data-en="Revenue (RMB)" data-cn="销售额 (人民币)">Revenue (RMB)</th>
+                                <th class="pb-3" data-en="YoY Growth" data-cn="同比增长率">YoY Growth</th>
+                                <th class="pb-3" data-en="Milestone / Notes" data-cn="重要节点">Milestone / Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800 font-medium">
+                            <tr>
+                                <td class="py-3 font-bold text-slate-900 dark:text-white">2021 (H2)</td>
+                                <td class="py-3 font-bold">0.32M RMB</td>
+                                <td class="py-3 text-slate-400">—</td>
+                                <td class="py-3 text-slate-500" data-en="Joined late June; built initial contacts from zero" data-cn="6月底入职，从零建立首批客户与渠道">Joined late June; built initial contacts from zero</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-bold text-slate-900 dark:text-white">2022</td>
+                                <td class="py-3 font-bold">0.95M RMB</td>
+                                <td class="py-3 font-bold text-brand-600 dark:text-brand-400">+197%</td>
+                                <td class="py-3 text-slate-500" data-en="First full year; rapid territory expansion" data-cn="首个完整财年，快速拓展区域业务">First full year; rapid territory expansion</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-bold text-slate-900 dark:text-white">2023</td>
+                                <td class="py-3 font-bold">3.47M RMB</td>
+                                <td class="py-3 font-bold text-brand-600 dark:text-brand-400">+265%</td>
+                                <td class="py-3 text-slate-500" data-en="Breakthrough year; high lab product adoption" data-cn="爆发式增长，高校科研实验室深度渗透">Breakthrough year; high lab product adoption</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-bold text-slate-900 dark:text-white">2024</td>
+                                <td class="py-3 font-bold">3.86M RMB</td>
+                                <td class="py-3 font-bold text-brand-600 dark:text-brand-400">+11%</td>
+                                <td class="py-3 text-slate-500" data-en="Consolidated key accounts & Analytica Germany" data-cn="巩固核心账户，参展德国Analytica展会">Consolidated key accounts & Analytica Germany</td>
+                            </tr>
+                            <tr class="bg-brand-50/50 dark:bg-brand-950/30">
+                                <td class="py-3 font-bold text-brand-700 dark:text-brand-300">2025</td>
+                                <td class="py-3 font-bold text-brand-700 dark:text-brand-300">4.77M RMB</td>
+                                <td class="py-3 font-bold text-brand-600 dark:text-brand-400">+23%</td>
+                                <td class="py-3 font-bold text-brand-700 dark:text-brand-300" data-en="Career-best performance; Q4 alone ~1.99M RMB" data-cn="历史最高纪录，仅第4季度贡献~1.99M RMB">Career-best performance; Q4 alone ~1.99M RMB</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-bold text-slate-900 dark:text-white">2026 (YTD)</td>
+                                <td class="py-3 font-bold">1.95M RMB</td>
+                                <td class="py-3 text-slate-400" data-en="On Track" data-cn="稳健推进中">On Track</td>
+                                <td class="py-3 text-slate-500" data-en="FENS 2026 Barcelona & tracking to Q4 targets" data-cn="参展2026巴塞罗那FENS论坛，冲刺年终目标">FENS 2026 Barcelona & tracking to Q4 targets</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Strategic Summary -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-4">
+                    <h3 class="font-extrabold text-slate-900 dark:text-white border-b pb-3 border-slate-200 dark:border-slate-800 text-sm uppercase tracking-wider" data-en="Territory Coverage & Pipeline" data-cn="大区布局与管道数据">Territory Coverage & Pipeline</h3>
+                    
+                    <div class="space-y-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+                        <div class="flex justify-between items-center py-2 border-b border-slate-100 dark:border-slate-800">
+                            <span data-en="Primary North America Regions" data-cn="重点覆盖美洲大区">Primary North America Regions</span>
+                            <span class="font-bold text-slate-900 dark:text-white">PA, VA, NJ, MA, CA, AZ, FL, TX, Canada</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-slate-100 dark:border-slate-800">
+                            <span data-en="Active Sales Opportunities" data-cn="实时跟进中的销售商机">Active Sales Opportunities</span>
+                            <span class="font-bold text-brand-600 dark:text-brand-400">739 Deals</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span data-en="Career Sales Multiplier" data-cn="业绩累计增长倍数">Career Sales Multiplier</span>
+                            <span class="font-bold text-slate-900 dark:text-white">15x Growth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-16 bg-white dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-10 flex items-center space-x-3">
+                <span class="w-3 h-8 bg-brand-600 rounded-full"></span>
+                <span data-en="Professional Experience & Impact" data-cn="职业履历与核心贡献">Professional Experience & Impact</span>
+            </h2>
+
+            <div class="space-y-8">
+                <!-- RWD -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 transition hover:border-brand-500/50">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-4 gap-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-en="International Sales Specialist" data-cn="国际销售专员">International Sales Specialist</h3>
+                            <p class="text-brand-600 dark:text-brand-400 font-semibold text-sm">RWD Life Science Co., Ltd. • Shenzhen, China</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-brand-100 dark:bg-brand-950 text-brand-700 dark:text-brand-300 w-max">Jun 2021 – Present</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                        <li data-en="Built multi-million RMB US & Canadian territories from scratch, scaling annual revenue 15x from 0.32M RMB in 2021 to 4.77M RMB in 2025." data-cn="从零搭建美加重点大区业务，年度业绩实现15倍跨越，从2021年的32万RMB增至2025年的477万RMB。">Built multi-million RMB US & Canadian territories from scratch, scaling annual revenue 15x from 0.32M RMB in 2021 to 4.77M RMB in 2025.</li>
+                        <li data-en="Architected and managed a high-volume pipeline containing 720+ client accounts and 730+ active opportunities across preclinical research labs." data-cn="建立并高效运维包含720+个实验室/机构客户及730+个活跃商机的高转化销售管线。">Architected and managed a high-volume pipeline containing 720+ client accounts and 730+ active opportunities across preclinical research labs.</li>
+                        <li data-en="Targeted university laboratories, pharmaceutical institutes, and CROs utilizing scientific research networks (ResearchGate, PubMed, Twitter/X)." data-cn="利用科研学术网络 (ResearchGate, PubMed, Twitter/X) 精准锁定并开发重点高校实验室、制药企业与CRO机构。">Targeted university laboratories, pharmaceutical institutes, and CROs utilizing scientific research networks (ResearchGate, PubMed, Twitter/X).</li>
+                        <li data-en="Represented the company as product expert at premier global conferences, including FENS Forum 2026 (July 05–10, Barcelona), Analytica 2024 (Munich), and regional Japanese scientific summits." data-cn="作为资深产品专家代表公司参展全球顶级学术学术盛会，包括2026欧洲神经科学学会联盟大会 (FENS 2026 巴塞罗那)、德国Analytica 2024及日本相关学术会议。">Represented the company as product expert at premier global conferences, including FENS Forum 2026 (July 05–10, Barcelona), Analytica 2024 (Munich), and regional Japanese scientific summits.</li>
+                    </ul>
+                </div>
+
+                <!-- OWIRE -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 transition hover:border-brand-500/50">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-4 gap-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-en="Foreign Sales Executive" data-cn="外贸销售主管">Foreign Sales Executive</h3>
+                            <p class="text-brand-600 dark:text-brand-400 font-semibold text-sm">Shenzhen Owire Communication Technology Co., Ltd. • Shenzhen, China</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 w-max">Dec 2020 – Jun 2021</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                        <li data-en="Spearheaded international B2B buyer acquisition across North America and Europe using Alibaba B2B, Made-in-China, and targeted cold email outreach." data-cn="通过阿里巴巴国际站、Made-in-China及精准开发信，全面拓展北美与欧洲B2B采购商。">Spearheaded international B2B buyer acquisition across North America and Europe using Alibaba B2B, Made-in-China, and targeted cold email outreach.</li>
+                        <li data-en="Managed key accounts for optical fiber cables, network accessories, and cross-over product lines (including OPAI electric scooters)." data-cn="负责光纤线缆、网络配件及跨界合作产品（包含欧派电动滑板车）的大客户开发与商务谈判。">Managed key accounts for optical fiber cables, network accessories, and cross-over product lines (including OPAI electric scooters).</li>
+                    </ul>
+                </div>
+
+                <!-- SHINHO -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 transition hover:border-brand-500/50">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-4 gap-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-en="International Sales & Marketing Executive" data-cn="国际销售与市场营销专员">International Sales & Marketing Executive</h3>
+                            <p class="text-brand-600 dark:text-brand-400 font-semibold text-sm">Shenzhen Shinho Electronic Technology Co., Ltd. • Shenzhen, China</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 w-max">Dec 2019 – Dec 2020</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                        <li data-en="Overseed end-to-end foreign trade operations, contract negotiations, order fulfillment, cross-border logistics, and customs documentation." data-cn="全程把控外贸出口操作，负责国际贸易合同谈判、订单跟进、跨境物流与海关报关全套流程。">Overseed end-to-end foreign trade operations, contract negotiations, order fulfillment, cross-border logistics, and customs documentation.</li>
+                    </ul>
+                </div>
+
+                <!-- SILULIN -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 transition hover:border-brand-500/50">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-4 gap-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-en="Business Manager (Bangladesh Branch Office)" data-cn="业务经理 (孟加拉分公司)">Business Manager (Bangladesh Branch Office)</h3>
+                            <p class="text-brand-600 dark:text-brand-400 font-semibold text-sm">SILULIN (Xiamen) Import & Export Co., Ltd. • Xiamen, China / Bangladesh</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 w-max">Jan 2019 – Aug 2019</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                        <li data-en="Directed overseas branch operations, building local dealer and distributor channels from the ground up." data-cn="全面统筹海外分公司整体运营，从零建立当地代理商与分销渠道网络。">Directed overseas branch operations, building local dealer and distributor channels from the ground up.</li>
+                        <li data-en="Formulated localized pricing, competitive benchmarking, and ensured operational alignment with local commercial laws." data-cn="制定本地化定价与竞争策略，并全面确保分公司商业合规运营。">Formulated localized pricing, competitive benchmarking, and ensured operational alignment with local commercial laws.</li>
+                    </ul>
+                </div>
+
+                <!-- ALPHA CREDIT RATING -->
+                <div class="glass-card p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 transition hover:border-brand-500/50">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800 mb-4 gap-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white" data-en="Senior Business Development Officer" data-cn="高级业务拓展专员">Senior Business Development Officer</h3>
+                            <p class="text-brand-600 dark:text-brand-400 font-semibold text-sm">Alpha Credit Rating Limited • Dhaka, Bangladesh</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 w-max">Nov 2013 – Aug 2016</span>
+                    </div>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                        <li data-en="Generated over BDT 6.5 Million in credit rating and financial advisory revenue by managing 350+ SME and corporate client accounts." data-cn="成功拓展并维护350+家中小企业及大型公司，累计创造超650万孟加拉塔卡信用评级与咨询服务收入。">Generated over BDT 6.5 Million in credit rating and financial advisory revenue by managing 350+ SME and corporate client accounts.</li>
+                        <li data-en="Executed field evaluations, financial risk assessments, and cultivated strategic referral relationships with bank senior executives." data-cn="负责实地尽职调查、财务风险评估，并与商业银行高级管理者建立长期的策略转介绍合作。">Executed field evaluations, financial risk assessments, and cultivated strategic referral relationships with bank senior executives.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-10 flex items-center space-x-3">
+            <span class="w-3 h-8 bg-brand-600 rounded-full"></span>
+            <span data-en="Education & Professional Credentials" data-cn="教育背景与专业认证">Education & Professional Credentials</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="glass-card p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
+                <span class="text-xs font-black text-brand-600 dark:text-brand-400 tracking-wider uppercase block mb-1">2016 – 2018</span>
+                <h3 class="text-xl font-extrabold text-slate-900 dark:text-white" data-en="Master of Economics (Management Economics)" data-cn="经济学硕士 (管理经济学)">Master of Economics (Management Economics)</h3>
+                <p class="text-slate-600 dark:text-slate-400 font-medium text-sm">Xiamen University • School of Economics (Xiamen, China)</p>
+                <div class="mt-4 inline-block px-3 py-1 rounded-md bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 text-xs font-bold border border-amber-300 dark:border-amber-800">
+                    <i class="fa-solid fa-award mr-1"></i> Chinese Government Scholarship Recipient
+                </div>
+            </div>
+
+            <div class="glass-card p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
+                <span class="text-xs font-black text-brand-600 dark:text-brand-400 tracking-wider uppercase block mb-1">2009 – 2013</span>
+                <h3 class="text-xl font-extrabold text-slate-900 dark:text-white" data-en="Bachelor of Business Administration (BBA)" data-cn="工商管理学士 (BBA)">Bachelor of Business Administration (BBA)</h3>
+                <p class="text-slate-600 dark:text-slate-400 font-medium text-sm">International Islamic University Chittagong</p>
+                <p class="text-xs text-slate-500 mt-2">Major in Finance & Banking</p>
+            </div>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <div class="glass-card p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center" data-en="Continuous Learning & Technical Training" data-cn="专业培训与技能认证">
+                <i class="fa-solid fa-certificate text-brand-600 mr-2"></i> Continuous Learning & Technical Training
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-4 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
+                    <span class="font-bold text-sm text-slate-900 dark:text-white block">CapCut PC Video Editing 2025</span>
+                    <span class="text-xs text-slate-500">Digital Media Production (40GB Resource Suite)</span>
+                </div>
+                <div class="p-4 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
+                    <span class="font-bold text-sm text-slate-900 dark:text-white block">Mobile Photography & Videography</span>
+                    <span class="text-xs text-slate-500">10 Minute School Professional Skill Certificate</span>
+                </div>
+                <div class="p-4 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
+                    <span class="font-bold text-sm text-slate-900 dark:text-white block">CV Writing & Interview Skills</span>
+                    <span class="text-xs text-slate-500">Executive Placement & Career Strategy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="bg-slate-950 text-white py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-2xl font-black" data-en="Let's Connect for Global Opportunities" data-cn="欢迎沟通全球业务与高管招聘机会">Let's Connect for Global Opportunities</h2>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <a href="mailto:tareq.abdullah01@gmail.com" class="text-slate-400 hover:text-brand-400 transition" title="Direct Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/mohammadtareqabdullah/" target="_blank" class="text-slate-400 hover:text-brand-400 transition" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="text-xs text-slate-500">© 2026 Mohammad Tareq Abdullah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- INTERACTION SCRIPTS -->
+    <script>
+        let currentLang = 'en';
+        function toggleLang() {
+            currentLang = currentLang === 'en' ? 'cn' : 'en';
+            document.getElementById('langText').innerText = currentLang === 'en' ? '中文' : 'English';
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.innerText = el.getAttribute(`data-${currentLang}`);
+            });
+        }
+
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>
